@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   fetchApi() {
-    const ACCESS_TOKEN = '7617a3417ca003acccf8d777f3cc3226f411441c';
+    const ACCESS_TOKEN = '291b237a35a2c3c94db103a0a3619bd7bd795a36';
     const BASE_URL = `https://api.github.com/users/${this.state.username}`;
     const user = fetch(`${BASE_URL}?access_token=${ACCESS_TOKEN}`).then(res => res.json());
     const repos = fetch(`${BASE_URL}/repos`).then(res => res.json());
